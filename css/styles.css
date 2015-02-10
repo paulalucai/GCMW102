@@ -23,27 +23,43 @@ p {
   color: #555;
   margin: 0 auto;
   max-width: 500px;
+  padding: 5px;
 }
-nav a {
+.email:hover, .email a:hover {
+	color: #ff9eb7;
+	background-color: #999;
+}
+#flowers {
+	padding: 10px;
+	max-width: 500px;
+	margin: 10px;
+}
+nav a, a {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #777;
   text-decoration: none;
   text-transform: uppercase;
 }
-nav a:hover {
+nav a:hover, a:hover {
   color: #ff9eb7;
 }
 ul {
   padding: 10px;
 }
-li {
+.ingredients li {
+	margin: 0 15px 0 15px;
+}
+nav li {
   padding: 0 10px 0 10px;
   display: inline;
 }
 img {
   border: 1px dashed #777;
   opacity: 0.75;
+}
+.pup {
+	max-width: 400px;
 }
 footer {
   font-family: "Open Sans", sans-serif;
