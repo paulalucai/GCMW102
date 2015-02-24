@@ -17,13 +17,44 @@ body {
   background-color: #ffffff;
   color: #555;
 }
+#main {
+    width:900px; /* sets the width */
+    margin:0 auto; /* centers the div on the page*/
+    overflow:hidden;    /*makes the div surround the floated columns */
+}
+#one {
+    float: left;
+    width: 49%; /* each column is 49% leaving 2% width between */
+    text-align: center; /* centers the photos */
+}
+#two {
+    float: right;
+    width: 49%;
+    text-align: center;
+}
 p {
   font-family: "Lato", sans-serif;
   border: 1px dashed #777;
   color: #555;
-  margin: 0 auto;
-  max-width: 500px;
-  padding: 5px;
+  padding: 10px;
+  text-align: center;
+}
+table {
+	border: 1px dashed #777;
+}
+th {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	border: 1px solid #777;
+}
+td {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Raleway", sans-serif;
+	border: 1px solid #777;
 }
 .email:hover, .email a:hover {
 	color: #ff9eb7;
@@ -55,13 +86,18 @@ nav li {
   display: inline;
 }
 img {
-  border: 1px dashed #777;
-  opacity: 0.75;
+    border: 1px dashed #777;
+    opacity: 0.75;
+    max-width: 99%;    /*keeps the photos from getting wider than the column width and allows for the border */
+}
+#column2 {
+	width: 60%;
 }
 .pup {
 	max-width: 400px;
 }
 footer {
+	clear: both;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   padding-top: 110px;
